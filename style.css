@@ -1,0 +1,66 @@
+#container {
+    position: relative;
+    background-color: cadetblue;
+}
+
+#outside-board {
+    position: relative;
+    border-radius: 10px;
+    background-color: #CDB38B;
+}
+
+#inside-board {
+    position: relative;
+}
+
+.rows {
+    display: flex;
+}
+
+.square, .river-square{
+    border: 2px solid #000;
+    box-shadow: 0 0 0 1px #000;
+}
+
+.river-square {
+    text-align: center;
+    font-size: 300%;
+}
+  
+.square::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.dropZone {
+    position: absolute;
+    font-size: 30px;
+    background-color: lightgray;
+    border-style: none;
+    width: 150px;
+    text-align: center;
+  }
+
+.myElement {
+    position: absolute;
+    font-size: 30px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    cursor: move;
+    width: 150px;
+    text-align: center;
+}
+
+.shadowElement {
+    position: absolute;
+    font-size: 30px;
+    border: none;
+    width: 150px;
+    text-align: center;
+}
