@@ -9,91 +9,279 @@
 <body>
     <div id="container">
         <div id="outside-board">
-            <div class="diagonal-line"></div>
             <div id="inside-board">
-                <div class="rows">   
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-                <div class="rows">   
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-                <div class="rows">   
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-                <div class="rows">   
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-                <div class="rows">
-                    <div class="river-square">Xiangqi</div>
-                </div>
-                <div class="rows">   
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-                <div class="rows">   
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-                <div class="rows">   
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
-                <div class="rows">   
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
+                <table id="table">
+                    <tr class="tr">
+                        <td class="td">
+                            <img src="image/left-top-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">俥</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/top-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">傌</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/top-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">相</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/inside-border-lt.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">仕</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/top-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">帥</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/inside-border-rt.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">仕</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/top-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">相</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/top-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">傌</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/right-top-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">俥</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td"><img src="image/left-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/center.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/right-border.png" class="square"></img></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td"><img src="image/left-border.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">炮</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/inside-square-lb.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/inside-square-rb.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">炮</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/right-border.png" class="square"></img></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">
+                            <img src="image/special-left-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">兵</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">兵</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">兵</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">兵</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-right-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="red">兵</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td"><img src="image/left-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/bottom-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/bottom-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/bottom-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/bottom-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/bottom-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/bottom-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/bottom-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/right-border.png" class="square"></img></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td"><img src="image/left-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/top-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/top-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/top-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/top-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/top-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/top-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/top-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/right-border.png" class="square"></img></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">
+                            <img src="image/special-left-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">卒</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">卒</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">卒</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">卒</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-right-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">卒</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td"><img src="image/left-border.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">砲</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/inside-square-lt.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/inside-square-rt.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td">
+                            <img src="image/special-square.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">砲</div>
+                            </div>
+                        </td>
+                        <td class="td"><img src="image/right-border.png" class="square"></img></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td"><img src="image/left-border.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/center.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/square.png" class="square"></img></td>
+                        <td class="td"><img src="image/right-border.png" class="square"></img></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">
+                            <img src="image/left-bottom-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">車</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/bottom-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">馬</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/bottom-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">象</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/inside-border-lb.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">士</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/bottom-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">將</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/inside-border-rb.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">士</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/bottom-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">象</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/bottom-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">馬</div>
+                            </div>
+                        </td>
+                        <td class="td">
+                            <img src="image/right-bottom-border.png" class="square"></img>
+                            <div class="chessman">
+                                <div class="green">車</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>

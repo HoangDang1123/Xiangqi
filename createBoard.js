@@ -18,19 +18,16 @@ function updateBoardSize() {
     outsideBoard.style.left = (windowWidth * 0.2) + "px";
     outsideBoard.style.top = (windowHeight * 0.035) + "px";
     outsideBoard.style.height = (windowHeight * 0.9) + "px";
-    outsideBoard.style.width = (windowWidth * 0.5 * 0.775) + "px";
+    outsideBoard.style.width = (windowWidth * 0.5 * 0.82) + "px";
 
     insideBoard.style.left = (windowWidth * 0.025) + "px";
-    insideBoard.style.top = (windowHeight * 0.05) + "px";
+    insideBoard.style.top = (windowHeight * 0.025) + "px";
     // insideBoard.style.height = (windowHeight * 0.) + "px";
 
     squares.forEach(square => {
         square.style.height = (windowWidth * 0.04) + "px";
         square.style.width = square.style.height;
     });
-
-    riverSquare.style.height = (windowWidth * 0.04) + "px";
-    riverSquare.style.width = ((windowWidth * 0.04 * 8) + 22) + "px"
 }
 
 // Gọi hàm updateBoardSize đầu tiên

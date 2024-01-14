@@ -6,35 +6,103 @@
 #outside-board {
     position: relative;
     border-radius: 10px;
-    background-color: #CDB38B;
+    background-color: #B5A391;
 }
 
 #inside-board {
     position: relative;
 }
 
-.rows {
-    display: flex;
+#table {
+    border-collapse: collapse;
+    border: none;
 }
 
-.square, .river-square{
-    border: 2px solid #000;
-    box-shadow: 0 0 0 1px #000;
+.tr, .td, .square {
+    border: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.square {
+    display: block;
+    pointer-events: none;
+    /* Chữ không bị bôi đen */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.chessman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 235, 223);
+    border-style: double;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin: 4px;
+    /* Chữ không bị bôi đen */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.red {
+    border-style: solid;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-color: rgb(148, 40, 40);
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(148, 40, 40);
+    background-color: rgb(243, 235, 223);
+    /* Chữ không bị bôi đen */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.green {
+    border-style: solid;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-color: rgb(26, 61, 36);
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(26, 61, 36);
+    background-color: rgb(243, 235, 223);
+    cursor: move;
+    /* Chữ không bị bôi đen */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
 }
 
 .river-square {
+    border: none;
     text-align: center;
     font-size: 300%;
-}
-  
-.square::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
 }
 
 .dropZone {
